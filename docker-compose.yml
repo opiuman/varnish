@@ -1,0 +1,13 @@
+varnish:
+  image: opiuman/varnish
+  ports:
+    - 80:80
+  links:
+    - backend
+  volumes:
+   - ./varnish.vcl:/etc/varnish/default.vcl
+
+backend:
+  image: backend
+  ports:
+    - 3000:3000

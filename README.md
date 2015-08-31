@@ -8,9 +8,9 @@ The experiment of putting the varnish in front of your web app via container env
 
 ## Usage  ##
 
- - Modify the ***docker-compose.yml*** file to link the appropriate web app container.
+ - Modify the ***docker-compose.yml*** file to link the appropriate backend container.
  
- - Modify the ***varnish.vcl*** file to meet your backend app setting and caching policy.
+ - Modify the ***varnish.vcl*** file to meet your backend container setting and caching policy.
  
  - Run ` docker-compose up`
  
